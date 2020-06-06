@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If You knew how much I love You</title>
+    <link rel="stylesheet" href="css/flickity.css">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="header__tabs">
+        <a href="about.html" class="tab__left">About</a>
+      </nav>
+    
+      <div class="header__title">
+        <h1 class="header__title__text">" If you knew <br/>how much i love you, <br/>you'd cry for joy " </h1>
+        <p class="header__name"> by Charlotte Foley</p>
+      </div>
+    </header>
+
+    <main>
+    <div class="intro">
+        <div class="intro__title"></div>
+        <div class="intro__text">
+          <p class="line__one">Living with two people that are merged into one.<br/> You feel like you are losing one of the two. 
+            <br/>You feel them slipping away from you.</p>
+          <p class="line__two"> You are grieving for someone who is still alive. </p>
+          <p class="line__three"> Every moment when they are normal, themselves; </p>
+        </div>
+    </div>
+
+    <div class="container__vertical__one"> 
+      <div class="left">
+      <div><img src="img/fotomateriaal/RUIS/Ruis 11 kopie.jpeg" /></div>
+      <p class="push__one">you forget, <br></p>
+      <div class="duo__one"><img src="img/fotomateriaal/RUIS/Ruis 11 kopie 3.jpeg" /></div>
+      <p class="push__two">you forgive, <br></p>
+      <div class="duo__two"><img src="img/fotomateriaal/RUIS/scan duo kopie 2.jpeg" /></div>
+      <p class="push__three">and you pretend. <br></p>
+      <div><img src="img/fotomateriaal/RUIS/Ruis 11 kopie 2.jpeg" /></div>
+      </div>
+        
+  
+      <div class="right">
+        <div><img src="img/tekens/zwaan/3.png"/></div>
+      <div><img src="img/tekens/object /combinaties/coaster+medaille.png" /></div>
+      <div><img src="img/tekens/aran /aran knits omlijning A4.png" /></div>
+      <div><img src="img/tekens/aran /aran knitss A4.png" /></div>
+      <div><img src="img/tekens/klei/proces horizontaal.png" /></div>
+      <div style="height: 50px;"></div>
+      </div>
+    </div>
+
+    <div class="container__horizontal">
+      <div><img src="img/fotomateriaal/RUIS/Ruis 8 kopie.jpeg" ></div>
+        <div class="horizontal__gallery">
+          <div><img src="img/tekens/schild/foley/foley schild.png"/></div>
+          <div><img src="img/tekens/schild/foley/schild.png"/></div>
+          <div><img src="img/tekens/schild/foley/leeuw.png"/></div>
+          <div><img src="img/tekens/schild/foley/schild + leeuw.png"/></div>
+          <div><img src="img/tekens/schild/walshe/alles.png"/></div>
+          <div><img src="img/tekens/schild/walshe/schild.png"/></div>
+          <div><img src="img/tekens/schild/walshe/zwaan.png"/></div>
+          <div><img src="img/tekens/schild/walshe/volledig schild.png"/></div>
+      
+        </div>
+    </div>
+
+    <p class="push__four">You press down your feelings,<br/>you put them away,<br/>
+     and try to forget about them.</p>
+     
+     <div class="container__vertical__two">
+      <div><img src="img/borduren/naaimachine/swans.png" /></div>
+      <p class="push__five">Always be ready <br></p>
+      <div class="trio"><img src="img/fotomateriaal/RUIS/Ruis 26 edit.png" /></div>
+      <p class="push__ six">to be let down. <br></p>
+      <div class="kruis"><img src="img/object/overbelicht 2.png"></div>
+      <div class="groen"><img src="img/klei/afdruk/object/groen.png"></div>
+      <p class="push__seven">to be disappointed. <br></p>
+      <div class="doping"><img src="img/fotomateriaal/RUIS/Ruis 18 kopie 2.jpeg" /></div>
+     </div>
+  
+    </main>
+
+    <footer>
+      <div class="copyright">
+        <p>© 2020 Charlotte Foley.</p>
+    </footer>
+
+    <script>
+      document.addEventListener("scroll", () => {
+        console.log("scroll!");
+        window.scrollY;
+        const right = document.querySelector(".right");
+        const bounds = right.getBoundingClientRect();
+        const y = window.scrollY;
+        right.style.transform = `translate3d(0, ${y}px, 0)`;
+        console.log(bounds.height);
+      });
+    </script>
+
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script src="js/imagemap-resizer.min.js"></script>
+    <script>
+      imageMapResize();
+    </script>
+  </body>
+</html>
