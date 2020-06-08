@@ -90,13 +90,10 @@
 
     <script>
       document.addEventListener("scroll", () => {
-        console.log("scroll!");
-        window.scrollY;
         const right = document.querySelector(".right");
         const bounds = right.getBoundingClientRect();
         const y = window.scrollY;
         right.style.transform = `translate3d(0, ${y}px, 0)`;
-        console.log(bounds.height);
       });
     </script>
 
