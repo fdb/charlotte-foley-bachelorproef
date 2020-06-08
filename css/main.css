@@ -5,6 +5,7 @@ img {
   max-width: 100%;
 }
 body {
+  margin: 0;
   font-family: menlo;
   font-size: 20px;
 }
@@ -34,10 +35,10 @@ body {
 /**** MAIN ****/
 
 /**** INTRO ****/
-main {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+
+.intro {
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .intro__text {
@@ -62,17 +63,21 @@ main {
 
 /**** IMAGES ****/
 /**** VERTICAL ONE ****/
-.container__vertical__one {
+.story-section {
   text-align: center;
-  width: 100%;
-}
-
-.left {
   width: 500px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
+
+.left {
+  /* width: 500px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
 .push__one {
   position: relative;
   transform: translate(-180px, 79px);
@@ -135,7 +140,8 @@ main {
   display: flex;
   overflow-x: auto;
   top: 20px;
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  width: 100vw;
 }
 
 .horizontal__gallery img {
@@ -148,7 +154,7 @@ main {
   max-width: 45%;
 }
 
-.push__four {
+.big-quote {
   text-align: center;
   width: 100%;
   margin-bottom: 300px;
